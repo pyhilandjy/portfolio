@@ -1,17 +1,15 @@
 // pages/index.tsx
-import Header from "../components/Header";
+import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
-import Stack from "../components/Stack";
 import Projects from "../components/Projects";
 
 const Home: React.FC = () => {
   return (
-    <div className="container mx-auto p-8">
-      <Header />
+    <>
+      <Hero />
       <AboutMe />
-      <Stack />
       <Projects />
-    </div>
+    </>
   );
 };
 

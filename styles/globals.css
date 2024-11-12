@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes moveStar {
+    0% {
+      transform: translate(0px, 0px);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translate(50px, -50px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 0.8;
+    }
+  }
+  
+  .animate-star {
+    animation: moveStar 5s infinite alternate ease-in-out;
+  }
+  
