@@ -19,15 +19,20 @@ const ConnectsLab: React.FC = () => {
                 </strong>
                 하기 위해 인스타그램의{" "}
                 <strong className="font-bold">육아 데이터를 수집하여</strong>
-                <span className="block ml-2 mt-1">
-                  <strong className="font-bold"> 분석하고 시각화</strong>
+                <span className="block ml-2 mb-3">
+                  {" "}
+                  <strong className="font-bold">분석하고 시각화</strong>
                 </span>
               </span>
             </li>
             <li className="flex items-start">
+              <span className="font-bold w-20 mb-3">참여 인원</span>
+              <span className="block mb-6">: 4명</span>
+            </li>
+            <li className="flex items-start">
               <span className="font-bold w-20 mb-3">목표</span>
               <span className="block ml-0 mb-6">
-                : 양적분석을 위한 데이터 수집
+                : 양적분석을 위한 데이터 수집 및 시각화
               </span>
             </li>
             <li className="flex items-start">
@@ -39,7 +44,7 @@ const ConnectsLab: React.FC = () => {
             <li className="flex items-start">
               <span className="font-bold w-20 mb-3">주요 작업</span>
               <span className="block ml-2 mb-3">
-                - 인스타그램 크롤링
+                - 인스타그램 데이터 수집
                 <br />
                 - 수집된 데이터 전처리
                 <br />- 데이터 시각화
@@ -48,7 +53,7 @@ const ConnectsLab: React.FC = () => {
             <li className="flex flex-col items-start">
               <span className="font-bold w-20 mb-4">작업상세</span>
               <span className="block ml-2 mb-3">
-                <span className="block font-bold">1. 데이터 크롤링</span>
+                <span className="block font-bold">1. 데이터 수집</span>
                 <span className="block ml-4">
                   ∙ 양적분석을 위해 육아 관련 데이터가 풍부한 인스타그램을
                   크롤링의 대상으로 선정하였습니다.
@@ -111,27 +116,11 @@ const ConnectsLab: React.FC = () => {
               rel="noopener noreferrer"
               className="text-blue-600 font-bold underline block"
             >
-              Admin BE repo
-            </a>
-            <a
-              href="https://www.github.com/pyhilandjy/clab-admin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 font-bold underline block"
-            >
-              User BE repo
-            </a>
-            <a
-              href="https://www.github.com/pyhilandjy/clab-admin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 font-bold underline block"
-            >
-              Admin FE repo
+              Github Repo
             </a>
           </div>
         </div>
-        <div className="space-y-10">
+        <div className="space-y-10 flex flex-col justify-center items-center h-full md:h-screen">
           <Image
             src="/connects-lab.png"
             alt="아키텍쳐"
