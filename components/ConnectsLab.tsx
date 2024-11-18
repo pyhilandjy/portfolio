@@ -108,6 +108,20 @@ const ConnectsLab: React.FC = () => {
                 </span>
               </span>
             </li>
+            <li className="flex flex-col items-start mb-6">
+              <span className="font-bold w-20 mb-2">회고</span>
+              <span className="block ml-4">
+                이전 프로젝트를 진행하며, Airflow와 Docker에 대한 이해도가
+                부족했고, 코드 모듈화가 제대로 이루어지지 않아 코드의 가독성과
+                유지보수성이 떨어지는 문제점이 있었습니다. 이를 개선하고자, 해당
+                프로젝트에서는 아키텍처 설계부터 Airflow와 Docker 세팅, 팀원들의
+                코드를 모듈화하는 리팩토링에 집중했습니다. 이 과정에서 모듈화의
+                필요성을 체감하며, 더 효율적인 코드 구조를 고민하는 시간을
+                가졌습니다. 특히 Docker 컨테이너를 분할하여 Airflow를 통해
+                병렬처리를 시도하면서 이전보다 Docker와 Airflow 사용에 대한
+                이해도 또한 높아지는 계기가 되었습니다.
+              </span>
+            </li>
           </ul>
           <div>
             <a

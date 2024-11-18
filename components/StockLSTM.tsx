@@ -18,6 +18,10 @@ const StockLSTM: React.FC = () => {
               </span>
             </li>
             <li className="flex items-start">
+              <span className="font-bold w-20 mb-6">참여 인원</span>
+              <span className="block mb-3">: 4명</span>
+            </li>
+            <li className="flex items-start">
               <span className="font-bold w-20 mb-3">목표</span>
               <span className="block ml-0 mb-6">: 데이터 파이프라인 구축</span>
             </li>
@@ -26,10 +30,6 @@ const StockLSTM: React.FC = () => {
               <span className="block ml-0 mb-3">
                 : Airflow, Crawl, LSTM, AWS
               </span>
-            </li>
-            <li className="flex items-start">
-              <span className="font-bold w-20 mb-6">참여 인원</span>
-              <span className="block mb-3">: 4명</span>
             </li>
             <li className="flex items-start">
               <span className="font-bold w-20 mb-3">주요 작업</span>
@@ -83,19 +83,17 @@ const StockLSTM: React.FC = () => {
               </span>
             </li>
             <li className="flex flex-col items-start mb-6">
-              <span className="font-bold w-20 mb-4">회고</span>
-              <span className="block ml-2 mb-3">
-                <span className="block ml-4">
-                  부트캠프에서 팀원을 배정받고, 아이디에이션 과정에서 2명의
-                  수강생이 중도 하차를 하였고, 남은 한명의 수강생은
-                </span>
-                <span className="block ml-4">
-                  지속적으로 소통을 요구하였지만 연락이 되지 않아 프로젝트를
-                  혼자 진행하게 되었습니다. 이로 인해 프로젝트의
-                </span>
-                <span className="block ml-4">
-                  완성도가 떨어지게 되었지만, 혼자서 프로젝트를 진행하면서 여러
-                </span>
+              <span className="font-bold w-20 mb-2">회고</span>
+              <span className="block ml-4">
+                부트캠프에서 처음 데이터 아키텍처를 설계한한 프로젝트로 제한된
+                리소스와 시간, 그리고 팀원들의 중도 하차 등 여러 변수로 인해
+                계획대로 프로젝트를 진행 하기에 여러 어려움이 있었습니다. 이러한
+                어려움들로 인해 결과물의 완성도에 집중하기 보다는, 해당
+                프로젝트를 통해 데이터 파이프라인 구축과 데이터 흐름에 대한
+                이해를 높이는 것을 목표로 하였습니다. 비록 기대했던 것처럼
+                완벽하게 마무리 짓지는 못하였지만, 데이터 아키텍처 설계와
+                파이프라인 구축에 대한 전반적 이해 및 실전 경험을 쌓을 수
+                있었습니다.
               </span>
             </li>
           </ul>
