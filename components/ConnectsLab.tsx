@@ -125,7 +125,7 @@ const ConnectsLab: React.FC = () => {
           </ul>
           <div>
             <a
-              href="https://www.github.com/pyhilandjy/clab-admin"
+              href="https://github.com/pyhilandjy/connects-lab"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 font-bold underline block"
