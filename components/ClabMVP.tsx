@@ -191,7 +191,7 @@ const ClabMVP: React.FC = () => {
           </ul>
           <div>
             <a
-              href="https://www.github.com/pyhilandjy/clab-admin"
+              href="https://github.com/pyhilandjy/clab-api"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 font-bold underline block"
@@ -199,7 +199,7 @@ const ClabMVP: React.FC = () => {
               Admin BE repo
             </a>
             <a
-              href="https://www.github.com/pyhilandjy/clab-admin"
+              href="https://github.com/pyhilandjy/clab-api-user"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 font-bold underline block"
