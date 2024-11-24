@@ -4,7 +4,9 @@ import Image from "next/image";
 const ClabMVP: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto bg-white text-black p-10 rounded-lg shadow-lg">
-      <h2 className="text-4xl font-bold mb-20 text-center">C-Lab MVP</h2>
+      <h2 className="text-4xl font-bold mb-20 text-center">
+        Talk-D MVP(Connects-Lab)
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="md:col-span-2">
           <ul className="list-disc list-inside mb-4 leading-relaxed">
@@ -20,11 +22,13 @@ const ClabMVP: React.FC = () => {
                   아이의 건강한 성장발달을 돕기 위해{" "}
                   <strong className="font-bold">
                     아이와 부모의 대화내용을 ML, LLM을 통해 분석 하여 부모에게
-                    피드백을
+                    대화의
                   </strong>
                 </span>
                 <span className="block mb-3 ml-2 mt-1">
-                  <strong className="font-bold">제공하는 서비스</strong>
+                  <strong className="font-bold">
+                    방향성을 제시하는 서비스
+                  </strong>
                 </span>
               </span>
             </li>
