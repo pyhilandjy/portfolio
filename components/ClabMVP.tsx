@@ -54,7 +54,11 @@ const ClabMVP: React.FC = () => {
               </span>
               <span className="block ml-2 mb-3">
                 <span className="block font-bold mb-1">
-                  2. 데이터 후처리 API/FE 구현
+                  2. 데이터 전후처리 API/FE 구현
+                </span>
+                <span className="block ml-4">
+                  ∙ 사용자 대기 시간을 최소화하기 위한 API 설계 및 백그라운드
+                  스케줄러 로직 구현
                 </span>
                 <span className="block ml-4">
                   ∙ Naver Clova STT API 연동 및 텍스트 데이터 후처리

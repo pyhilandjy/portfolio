@@ -73,7 +73,7 @@ const ClabMVP: React.FC = () => {
                   시스템 구축
                 </span>
                 <span className="block ml-4">
-                  ∙ 외래키 제약조간 제거로 인한 계층형 데이터 구조에서의 참조
+                  ∙ 외래키 제약조건 제거로 인한 계층형 데이터 구조에서의 참조
                   무결성 보장을 위한 비즈니스 로직 설계
                 </span>
                 <span className="block ml-4">
@@ -189,21 +189,21 @@ const ClabMVP: React.FC = () => {
         </div>
         <div className="space-y-10 flex flex-col justify-center items-center md:h-screen">
           <Image
-            src="/clab-mvp.png"
+            src="/clab-plans-page.png"
             alt="아키텍쳐"
             width={380}
             height={200}
             className="rounded-lg shadow-md"
           />
           <Image
-            src="/clab-admin-page.png"
+            src="/clab-manage-page.png"
             alt="STT수정 페이지"
             width={380}
             height={200}
             className="rounded-lg shadow-md"
           />
           <Image
-            src="/clab-admin-report.png"
+            src="/clab-reports-stt.png"
             alt="report 데이터 추출 페이지"
             width={380}
             height={200}
