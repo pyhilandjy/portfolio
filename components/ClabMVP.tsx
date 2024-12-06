@@ -4,150 +4,75 @@ import Image from "next/image";
 const ClabMVP: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto bg-white text-black p-10 rounded-lg shadow-lg">
-      <h2 className="text-4xl font-bold mb-20 text-center">
+      <h2 className="text-4xl font-bold text-center mb-3">
         Talk-D MVP(Connects-Lab)
       </h2>
+      <h2 className="text-xl font-bold mb-20 text-center">(2024.03~2024.07)</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="md:col-span-2">
           <ul className="list-disc list-inside mb-4 leading-relaxed">
-            <li className="flex items-start">
-              <span className="font-bold w-20 mb-3">개요</span>
-              <span className="block ml-0 mb-3">
-                : 생애초기(0-4세) 뇌 신경망의 발달이 폭발적으로 일어나는 시기에
+            <li className="flex flex-col items-start">
+              <span className="font-bold mb-2">프로젝트 개요</span>
+              <span className="block ml-4">
+                ∙ 생애초기(0-4세) 뇌 신경망의 발달이 폭발적으로 일어나는 시기에
                 가장 중요하게 작용하는{" "}
+                <strong className="font-bold">{"부모의 말"}</strong>
+              </span>
+              <span className="block ml-8 mt-1">
+                아이의 건강한 성장발달을 돕기 위해{" "}
                 <strong className="font-bold">
-                  {'"'}부모의 말{'"'}
+                  아이와 부모의 대화내용을 분석 하여 부모에게 대화의
                 </strong>
-                <span className="block ml-2 mt-1">
-                  아이의 건강한 성장발달을 돕기 위해{" "}
-                  <strong className="font-bold">
-                    아이와 부모의 대화내용을 ML, LLM을 통해 분석 하여 부모에게
-                    대화의
-                  </strong>
-                </span>
-                <span className="block mb-3 ml-2 mt-1">
-                  <strong className="font-bold">
-                    방향성을 제시하는 서비스
-                  </strong>
-                </span>
+                <strong className="font-bold">방향성을 제시하는 서비스</strong>
               </span>
+              <span className="block mb-3 ml-8 mt-1"></span>
             </li>
             <li className="flex items-start">
-              <span className="font-bold w-20 mb-3">목표</span>
-              <span className="block ml-0 mb-6">: 서비스 핵심 기능 개발</span>
-            </li>
-            <li className="flex items-start">
-              <span className="font-bold w-20 mb-6">주요 기술</span>
-              <span className="block ml-0 mb-3">
-                : Fast-api, Next.js, Nginex, Docker, AWS, Github, Github-Action,
-                Request(LLM), STT(Naver Clova)
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="font-bold w-20 mb-3">프로세스</span>
-              <span className="block ml-2 mb-6">
-                1. 사용자로부터 오디오 파일을 수집
-                <br />
-                2. STT 이후 오탈자, 발화자 정보 수정
-                <br />
-                3. 분석에 필요한 데이터 가공
-                <br />
-                4. 피드백 리포트 제공
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="font-bold w-20 mb-3">주요 작업</span>
-              <span className="block ml-2 mb-6">
-                - Database Modeling
-                <br />
-                - 데이터 전처리 및 데이터 가공 API 및 워크스페이스 구축
-                <br />
-                - 통계된 데이터 확인 및 후처리 API 및 워크스페이스 구축
-                <br />- BE, FE 서버 배포
+              <span className="font-bold mb-3">주요 역할</span>
+              <span className="block ml-6 mb-6">
+                - Database Schema 설계 및 최적화 (Supabase)
+                <br />- 관리자 사이트 API/FE 구축(FastAPI, Next.js)
+                <br />- BE, FE 배포 파이프라인 구축 (Docker, AWS, Github, Github
+                Action)
               </span>
             </li>
             <li className="flex flex-col items-start">
-              <span className="font-bold w-20 mb-4">작업상세</span>
+              <span className="font-bold mb-4">작업상세</span>
               <span className="block ml-2 mb-3">
                 <span className="block font-bold mb-1">
-                  1. 데이터베이스 모델링
+                  1. 데이터베이스 설계 및 구현
                 </span>
                 <span className="block ml-4">
-                  ∙ 데이터 일관성과 중복 최소화를 위한{" "}
-                  <strong className="font-bold">정규화 원칙을 적용</strong>
-                  하되, 프로젝트 초기 단계에서{" "}
-                  <strong className="font-bold">빈번한 스키마 변경이</strong>
-                </span>
-                <span className="block ml-8 mb-2">
-                  <strong className="font-bold">예상</strong>되어, 유연한 구조
-                  확보를 위해{" "}
-                  <strong className="font-bold">외래키 제약조건은 제외</strong>
-                  하여 설계를 진행했습니다.
+                  ∙ 정규화 원칙을 적용한 테이블 설계로 데이터 일관성 확보 및
+                  중복 최소화 달성
                 </span>
                 <span className="block ml-4">
-                  ∙ 정규화를 적용한 결과, 테이블 간 관계가 복잡해지고 참조해야
-                  하는 테이블이 많아지면서 API 설계 과정에서
-                </span>
-                <span className="block ml-8">
-                  어려움을 겪었습니다. 이로인해 API 설계 시 로직을 메모 하는
-                  습관이 생겼고, 이후 API 설계 및 구현에 있어서
-                </span>
-                <span className="block ml-8 mb-4">
-                  더 빠르게 진행할 수 있었습니다.
+                  ∙ 설계 초기 빈번한 스키마 변경으로 외래키 제약조건 제거 후
+                  인덱스 설정
                 </span>
                 <span className="block ml-8"></span>
               </span>
               <span className="block ml-2 mb-3">
                 <span className="block font-bold mb-1">
-                  2. REST API 아키텍처 설계
+                  2. 데이터 후처리 API/FE 구현
                 </span>
                 <span className="block ml-4">
-                  ∙ 외래키가 없는 테이블 구조에서{" "}
-                  <strong className="font-bold">
-                    데이터 무결성 관리에 중점을 두어 설계
-                  </strong>
-                  했으며, 특히 상위 테이블의 데이터 삭제 시
-                </span>
-                <span className="block ml-8 mb-2">
-                  발생할 수 있는 고아 데이터 문제를 해결하기 위해 고민했습니다.
+                  ∙ Naver Clova STT API 연동 및 텍스트 데이터 후처리
+                  워크스페이스 개발
                 </span>
                 <span className="block ml-4">
-                  ∙ 하위 데이터가 존재하는 경우 사용자에게 하위 데이터의 존재를
-                  알리고, 전체 삭제 여부를 확인하는 알림을 추가하여
+                  ∙ 대화 데이터의 순서 정합성을 보장하며 수정 작업을 처리하기
+                  위한 API 설계
                 </span>
-                <span className="block ml-8 mb-4">
-                  데이터의 일관성을 유지하면서 사용자가 데이터 삭제의 영향을
-                  인지하고 결정할 수 있도록 설계했습니다.
+                <span className="block ml-4">
+                  ∙ 오류 복구 및 데이터 무결성 유지를 위한 트랜잭션 및 예외 처리
+                  로직 구현
                 </span>
                 <span className="block ml-8"></span>
-              </span>
-              <span className="block ml-2 mb-3">
-                <span className="block font-bold mb-1">
-                  3. 계층형 데이터 버전 관리
-                </span>
-                <span className="block ml-4">
-                  ∙ 계층형 데이터 구조에서 하위 데이터 수정 시 발생하는{" "}
-                  <strong className="font-bold">데이터 정합성 문제</strong>를
-                  해결하기 위해 하위 데이터 수정 시
-                </span>
-                <span className="block ml-8">
-                  상위 데이터의 버전을 관리하여 기존 사용자와 신규 업데이트
-                  사용자 간의 데이터의 일관성을 보장하도록
-                </span>
-                <span className="block ml-8 mb-2">설계했습니다.</span>
-
-                <span className="block ml-4">
-                  ∙ 데이터의 버전 관리와 시스템의 확장성을 고려한 아키텍처
-                  설계를 진행하며 버전 관리의 중요성, 사용자 경험을 고려한
-                </span>
-                <span className="block ml-8 mb-4">
-                  설계의 필요성, 그리고 확장 가능한 아키텍처 설계를
-                  경험하였습니다.
-                </span>
               </span>
               <span className="block ml-2 mb-5">
                 <span className="block font-bold mb-1">
-                  4. 데이터 후처리 및 분석
+                  3. 데이터 분석 API/FE 구현
                 </span>
                 <span className="block ml-4">
                   ∙ Naver clova의 STT(Speech to Text) API를 통해 변환된 텍스트
