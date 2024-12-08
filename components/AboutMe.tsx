@@ -67,14 +67,12 @@ const AboutMe: React.FC = () => {
             <p className="text-lg mr-20 text-left">
               ∙ 서비스 아이디어 회의부터{" "}
               <strong className="font-bold">
-                BE(Fast-API), FE(Next.JS), Database 설계 및 구축
+                BackEnd, FrontEnd, Database 설계 및 구축
               </strong>
             </p>
             <p className="text-lg mb-4 ml-4 mr-20 text-left">
-              <strong className="font-bold">
-                CI/CD(Github-Action)를 구현하고, AWS를 이용해 배포
-              </strong>
-              한 경험이 있습니다.
+              <strong className="font-bold">빌드/배포</strong>한 경험이
+              있습니다.
             </p>
             <p className="text-lg mb-0 mr-20 text-left leading-loose">
               ∙ 이해관계자와의{" "}
@@ -82,23 +80,23 @@ const AboutMe: React.FC = () => {
               에서는 복잡한 내용을 일상적인 예시로 풀어 설명하며,{" "}
             </p>
             <p className="text-lg mb-4 ml-4 mr-20 text-left leading-loose">
-              <strong className="font-bold">소프트스킬</strong>을 꾸준히
+              <strong className="font-bold">커뮤니케이션 능력</strong>을 꾸준히
               개발하고 있습니다.
             </p>
             <p className="text-lg mb-0 mr-20 text-left leading-loose">
-              ∙ <strong className="font-bold">새로운 기술에</strong> 설레임을
-              느끼며 이를 배우며 <strong className="font-bold">성장</strong>하는
-              과정을 즐깁니다.
+              ∙ <strong className="font-bold">새로운 기술에</strong> 거부감이
+              없이 배우고 <strong className="font-bold">성장</strong>하는 과정을
+              즐며, 이를 통해 프로젝트에서
             </p>
             <p className="text-lg mb-4 ml-4 mr-20 text-left leading-loose">
-              또한 새로운 기술을 프로젝트에 어떻게 적용하면{" "}
-              <strong className="font-bold">더 좋은 결과</strong>를 만들지
-              고민합니다.
+              <strong className="font-bold">더 나은 결과</strong>를 만드는
+              방법을 고민합니다.
             </p>
-            <p className="text-lg mb-4 mr-20 text-left">
-              ∙ 맡은 일에는 <strong className="font-bold">책임감</strong>을 갖고{" "}
-              <strong className="font-bold">최선</strong>을 다하며
-              주변사람들에게 신뢰를 얻으려 노력합니다.
+            <p className="text-lg mb-0 mr-20 text-left">
+              ∙ <strong className="font-bold">책임감</strong>을 갖고 맡은 일을
+              <strong className="font-bold"> 최선을 다해 마무리</strong>하며
+              주변사람들에게 <strong className="font-bold">신뢰</strong>를
+              얻으려 노력합니다.
             </p>
           </div>
         </div>
