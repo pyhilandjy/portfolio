@@ -16,6 +16,14 @@ const Skills: React.FC = () => {
           </ul>
         </div>
         <div>
+          <h3 className="text-xl font-semibold">DevOps</h3>
+          <ul className="list-disc list-inside ml-4 mt-2">
+            <li>Nginx</li>
+            <li>GitHub Actions</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div>
           <h3 className="text-xl font-semibold">Databases</h3>
           <ul className="list-disc list-inside ml-1 mt-2">
             <li>MySQL</li>
@@ -26,31 +34,23 @@ const Skills: React.FC = () => {
         <div>
           <h3 className="text-xl font-semibold">Cloud</h3>
           <ul className="list-disc list-inside ml-1 mt-2">
-            <li>AWS EC2</li>
-            <li>AWS S3</li>
+            <li>AWS</li>
             <li>Supabase</li>
           </ul>
         </div>
+
+        <div>
+          <h3 className="text-xl font-semibold">AI</h3>
+          <ul className="list-disc list-inside ml-1 mt-2">
+            <li>Machine Learning (ML)</li>
+            <li>Large Language Models (LLM)</li>
+          </ul>
+        </div>
+
         <div>
           <h3 className="text-xl font-semibold">Version Control</h3>
           <ul className="list-disc list-inside ml-1 mt-2">
             <li>Git</li>
-            <li>Github</li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-xl font-semibold">Deployment & DevOps</h3>
-          <ul className="list-disc list-inside ml-4 mt-2">
-            <li>Nginx</li>
-            <li>GitHub Actions</li>
-            <li>Docker</li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-xl font-semibold">Others</h3>
-          <ul className="list-disc list-inside ml-1 mt-2">
-            <li>Machine Learning (ML)</li>
-            <li>Large Language Models (LLM)</li>
           </ul>
         </div>
       </div>
