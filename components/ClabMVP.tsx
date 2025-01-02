@@ -27,12 +27,14 @@ const ClabMVP: React.FC = () => {
               </span>
               <span className="block mb-3 ml-8 mt-1"></span>
             </li>
-            <li className="flex items-start">
-              <span className="font-bold mb-3">주요 역할</span>
-              <span className="block ml-6 mb-6">
-                - Database Schema 설계 및 최적화 (Supabase)
-                <br />- 관리자 사이트 API/FE 구축(FastAPI, Next.js)
-                <br />- BE, FE 배포 파이프라인 구축 (Docker, AWS, Github, Github
+            <li className="flex flex-col items-start">
+              <span className="font-bold mb-1">주요 역할</span>
+              <span className="block ml-4 mb-6">
+                ∙ Database Schema 확장 및 최적화 (Supabase)
+                <br />∙ 사용자 관리 시스템 전담 (FastAPI, Next.js)
+                <br />∙ 사용자 API 전담 (FastAPI)
+                <br />∙ 서비스 자동화 연동 (Naver Clova STT, LLM)
+                <br />∙ 배포 환경 유지 및 확장 (Docker, AWS, Github, Github
                 Action)
               </span>
             </li>
@@ -78,13 +80,7 @@ const ClabMVP: React.FC = () => {
                 <span className="block font-bold mb-1">
                   3. 데이터 분석 API/FE 구현
                 </span>
-                <span className="block ml-4">
-                  ∙ Naver clova의 STT(Speech to Text) API를 통해 변환된 텍스트
-                  데이터의 오탈자와 발화자 정보를 수정할 수 있는
-                </span>
-                <span className="block ml-8 mb-2">
-                  인터페이스를 구축하였습니다.
-                </span>
+                <span className="block ml-4 ">∙</span>
                 <span className="block ml-4">
                   ∙ 데이터 분석을 위해 정제된 텍스트와 메타데이터를{" "}
                   <strong className="font-bold">ML서버와 연동</strong>하여 자동
