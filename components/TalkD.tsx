@@ -12,7 +12,7 @@ const ClabMVP: React.FC = () => {
             <li className="flex flex-col items-start">
               <span className="font-bold mb-1">개요</span>
               <span className="block ml-4 mb-6">
-                ∙ 사용자 컨텐츠 및 유료개념 추가되면서{" "}
+                ∙ 사용자 컨텐츠가 추가되면서{" "}
                 <strong className="font-bold">사용자 관리 기능 확장</strong>.
               </span>
             </li>
@@ -34,6 +34,7 @@ const ClabMVP: React.FC = () => {
               <span className="block ml-4 mb-6">
                 ∙ Database Schema 확장 및 최적화 (Supabase)
                 <br />∙ 사용자 관리 시스템 전담 (FastAPI, Next.js)
+                <br />∙ 사용자 API 전담 (FastAPI)
                 <br />∙ 서비스 자동화 연동 (Naver Clova STT, LLM)
                 <br />∙ 배포 환경 유지 및 확장 (Docker, AWS, Github, Github
                 Action)
@@ -46,8 +47,8 @@ const ClabMVP: React.FC = () => {
                   1. 데이터베이스 재설계
                 </span>
                 <span className="block ml-4">
-                  ∙ 유료화 및 사용자 콘텐츠 추가를 반영한 테이블 구조 설계 및
-                  최적화
+                  ∙ <strong className="font-bold">사용자 콘텐츠 추가</strong>를
+                  반영하여 테이블 구조 재설계 및 최적화
                 </span>
                 <span className="block ml-4">
                   ∙ 관리자 계정의 인증 정책과 접근 제어 설정
@@ -55,10 +56,30 @@ const ClabMVP: React.FC = () => {
               </span>
               <span className="block ml-4 mb-3">
                 <span className="block font-bold mb-1">
-                  2. 사용자 관리 API 구축
+                  2. 사용자 관리 API 확장
                 </span>
                 <span className="block ml-4">
-                  ∙ 사용자 정보, 콘텐츠, 리포트 관리를 위한 API 설계 및 구현
+                  ∙<strong className="font-bold"> 콘텐츠 관리</strong>
+                  <span className="block ml-6">
+                    - 사용자 제공 컨텐츠를 관리
+                  </span>
+                  <span className="block ml-6">
+                    - 계층형 데이터의 정합성과 유실 방지를 고려한 설계
+                  </span>
+                </span>
+                <span className="block ml-4">
+                  ∙<strong className="font-bold"> 사용자 관리</strong>
+                  <span className="block ml-6">- 사용자 데이터 통합 관리</span>
+                  <span className="block ml-6">
+                    - 사용자 증가에 대비한 대규모 데이터 처리 중심의 설계
+                  </span>
+                </span>
+                <span className="block ml-4">
+                  ∙<strong className="font-bold"> 리포트 관리</strong>
+                  <span className="block ml-6">- 리포트 데이터 관리</span>
+                  <span className="block ml-6">
+                    - 사용자 증가에 대비한 대규모 데이터 처리 중심의 설계
+                  </span>
                 </span>
                 <span className="block ml-4">
                   ∙ 콘텐츠 관리 로직 추가에 따른 API 리팩토링 및 확장
@@ -67,11 +88,11 @@ const ClabMVP: React.FC = () => {
               </span>
               <span className="block ml-4 mb-3">
                 <span className="block font-bold mb-1">
-                  3. 관리자 인터페이스 개발
+                  3. 관리자 인터페이스 확장
                 </span>
                 <span className="block ml-4">
                   ∙ 데이터 후처리 및 레포트 작업을 통합 관리하는 관리자
-                  인터페이스 개발
+                  인터페이스
                 </span>
                 <span className="block ml-4">
                   ∙ MVP 피드백 반영을 통한 UI/UX 개선
