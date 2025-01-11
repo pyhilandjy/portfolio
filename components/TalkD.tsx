@@ -12,8 +12,8 @@ const ClabMVP: React.FC = () => {
             <li className="flex flex-col items-start">
               <span className="font-bold mb-1">개요</span>
               <span className="block ml-4 mb-6">
-                ∙ 사용자 컨텐츠가 추가되면서{" "}
-                <strong className="font-bold">사용자 관리 기능 확장</strong>.
+                ∙ 사용자 콘텐츠 추가 및 리포트 생성 방식 개선으로 사용자·관리자
+                시스템 전면 개편
               </span>
             </li>
             {/* <li className="flex flex-col items-start">
@@ -47,8 +47,7 @@ const ClabMVP: React.FC = () => {
                   1. 데이터베이스 재설계
                 </span>
                 <span className="block ml-4">
-                  ∙ <strong className="font-bold">사용자 콘텐츠 추가</strong>를
-                  반영하여 테이블 구조 재설계 및 최적화
+                  ∙ 사용자 콘텐츠 추가를 반영하여 테이블 구조 재설계 및 최적화
                 </span>
                 <span className="block ml-4">
                   ∙ 관리자 계정의 인증 정책과 접근 제어 설정
@@ -110,7 +109,7 @@ const ClabMVP: React.FC = () => {
               </span>
               <span className="block ml-4 mb-5">
                 <span className="block font-bold mb-1">
-                  . 데이터 분석 자동화 연동
+                  5. 데이터 분석 자동화 연동
                 </span>
                 <span className="block ml-4">
                   ∙ LLM 기반 음성 데이터 분석 시스템 구축 및 프롬프트 개선 도구
@@ -182,6 +181,13 @@ const ClabMVP: React.FC = () => {
           <Image
             src="/clab-reports-stt.png"
             alt="report 데이터 추출 페이지"
+            width={380}
+            height={200}
+            className="rounded-lg shadow-md"
+          />
+          <Image
+            src="/clab-report1.png"
+            alt="워드클라우드"
             width={380}
             height={200}
             className="rounded-lg shadow-md"
