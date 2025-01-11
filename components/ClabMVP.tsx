@@ -2,6 +2,25 @@ import React from "react";
 import Image from "next/image";
 
 const ClabMVP: React.FC = () => {
+  const handleImageClick = (src: string) => {
+    const w = window.open("");
+    if (w) {
+      w.document.write(`
+        <html>
+          <head>
+            <style>
+              body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: black; }
+              img { max-width: 90%; max-height: 90%; }
+            </style>
+          </head>
+          <body>
+            <img src="${src}" />
+          </body>
+        </html>
+      `);
+    }
+  };
+
   return (
     <div className="max-w-7xl mx-auto bg-white text-black p-10 rounded-lg shadow-lg">
       <h2 className="text-4xl font-bold text-center mb-3">
@@ -136,21 +155,24 @@ const ClabMVP: React.FC = () => {
             alt="아키텍쳐"
             width={380}
             height={200}
-            className="rounded-lg shadow-md"
+            className="rounded-lg shadow-md cursor-pointer"
+            onClick={() => handleImageClick("/clab-mvp.png")}
           />
           <Image
             src="/clab-admin-page.png"
             alt="STT수정 페이지"
             width={380}
             height={200}
-            className="rounded-lg shadow-md"
+            className="rounded-lg shadow-md cursor-pointer"
+            onClick={() => handleImageClick("/clab-admin-page.png")}
           />
           <Image
             src="/clab-admin-report.png"
             alt="report 데이터 추출 페이지"
             width={380}
             height={200}
-            className="rounded-lg shadow-md"
+            className="rounded-lg shadow-md cursor-pointer"
+            onClick={() => handleImageClick("/clab-admin-report.png")}
           />
         </div>
       </div>
