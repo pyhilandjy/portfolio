@@ -1,28 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Modal from "react-modal";
 
 const ClabMVP: React.FC = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const handleImageClick = (src: string) => {
-    const w = window.open("");
-    if (w) {
-      w.document.write(`
-        <html>
-          <head>
-            <style>
-              body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: black; }
-              img { max-width: 90%; max-height: 90%; }
-            </style>
-          </head>
-          <body>
-            <img src="${src}" />
-          </body>
-        </html>
-      `);
-    }
+    setSelectedImage(src);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+    setSelectedImage(null);
   };
 
   return (
     <div className="max-w-7xl mx-auto bg-white text-black p-10 rounded-lg shadow-lg">
+      {modalIsOpen && (
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          className="fixed inset-0 flex items-center justify-center p-4 bg-black bg-opacity-75"
+          overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+          contentLabel="Image Modal"
+          ariaHideApp={false}
+        >
+          {selectedImage && (
+            <div
+              className="relative bg-black rounded-lg p-4"
+              onClick={closeModal}
+            >
+              <Image
+                src={selectedImage}
+                alt="Modal Content"
+                layout="intrinsic"
+                width={1200}
+                height={950}
+                className="max-w-full max-h-screen rounded-lg"
+              />
+            </div>
+          )}
+        </Modal>
+      )}
       <h2 className="text-4xl font-bold text-center mb-3">
         Talk-D MVP(Connects-Lab)
       </h2>
