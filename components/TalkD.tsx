@@ -5,7 +5,7 @@ const ClabMVP: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto bg-white text-black p-10 rounded-lg shadow-lg">
       <h2 className="text-4xl font-bold text-center mb-3">Talk-D 0.7 버전</h2>
-      <h2 className="text-xl font-bold mb-20 text-center">(2024.07~현재)</h2>
+      <h2 className="text-xl font-bold mb-20 text-center">(2024.07~2025.01)</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="md:col-span-2">
           <ul className="list-disc list-inside mb-4 leading-relaxed">
@@ -60,35 +60,45 @@ const ClabMVP: React.FC = () => {
                 </span>
                 <span className="block ml-4">
                   ∙<strong className="font-bold"> 콘텐츠 관리</strong>
-                  <span className="block ml-6">
-                    - 사용자 제공 컨텐츠를 관리
-                  </span>
+                  <span className="block ml-6">- 사용자 제공 컨텐츠 관리</span>
                   <span className="block ml-6">
                     - 계층형 데이터의 정합성과 유실 방지를 고려한 설계
                   </span>
                 </span>
                 <span className="block ml-4">
                   ∙<strong className="font-bold"> 사용자 관리</strong>
-                  <span className="block ml-6">- 사용자 데이터 통합 관리</span>
+                  <span className="block ml-6">
+                    - 레포트를 제공하기 위한 사용자 데이터 통합 관리
+                  </span>
                   <span className="block ml-6">
                     - 사용자 증가에 대비한 대규모 데이터 처리 중심의 설계
                   </span>
                 </span>
                 <span className="block ml-4">
                   ∙<strong className="font-bold"> 리포트 관리</strong>
-                  <span className="block ml-6">- 리포트 데이터 관리</span>
                   <span className="block ml-6">
-                    - 사용자 증가에 대비한 대규모 데이터 처리 중심의 설계
+                    - 통계된 사용자 데이터 검수 및 관리
                   </span>
-                </span>
-                <span className="block ml-4">
-                  ∙ 콘텐츠 관리 로직 추가에 따른 API 리팩토링 및 확장
                 </span>
                 <span className="block ml-8"></span>
               </span>
               <span className="block ml-4 mb-3">
                 <span className="block font-bold mb-1">
-                  3. 관리자 인터페이스 확장
+                  2. 사용자 서비스 API 확장
+                </span>
+                <span className="block ml-4">
+                  ∙<strong className="font-bold"> 사용자 콘텐츠 관리</strong>
+                  <span className="block ml-6">
+                    - 사용자 컨텐츠 조회 및 신청 가능 컨텐츠 목록 제공
+                  </span>
+                  <span className="block ml-6">
+                    - 정책에 따른 데이터 검증 및 페이지 연동 로직 구현
+                  </span>
+                </span>
+              </span>
+              <span className="block ml-4 mb-3">
+                <span className="block font-bold mb-1">
+                  4. 관리자 인터페이스 확장
                 </span>
                 <span className="block ml-4">
                   ∙ 데이터 후처리 및 레포트 작업을 통합 관리하는 관리자
@@ -100,7 +110,7 @@ const ClabMVP: React.FC = () => {
               </span>
               <span className="block ml-4 mb-5">
                 <span className="block font-bold mb-1">
-                  4. 데이터 분석 자동화 연동
+                  . 데이터 분석 자동화 연동
                 </span>
                 <span className="block ml-4">
                   ∙ LLM 기반 음성 데이터 분석 시스템 구축 및 프롬프트 개선 도구
