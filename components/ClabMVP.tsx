@@ -80,41 +80,26 @@ const ClabMVP: React.FC = () => {
                 <span className="block font-bold mb-1">
                   3. 데이터 분석 API/FE 구현
                 </span>
-                <span className="block ml-4 ">∙</span>
                 <span className="block ml-4">
-                  ∙ 데이터 분석을 위해 정제된 텍스트와 메타데이터를{" "}
-                  <strong className="font-bold">ML서버와 연동</strong>하여 자동
-                  문장 분류를 구현하였으며, 분류 결과를
-                </span>
-                <span className="block ml-8 mb-2">
-                  수정할 수 있는 인터페이스를 구축하였습니다.
+                  ∙ 관리자용 데이터 분석 API를 통해 대화 내용의 통계데이터 생성
                 </span>
                 <span className="block ml-4">
-                  ∙ 오디오 데이터를 통해 인사이트를 도출하기 위해{" "}
-                  <strong className="font-bold">LLM 기반 분석 시스템</strong>을
-                  구축하였고, 분석 품질을 지속적으로
+                  ∙ 생성된 통계데이터 엑셀 파일로 내보내기
                 </span>
-                <span className="block ml-8 mb-2">
-                  개선하기 위해{" "}
-                  <strong className="font-bold">프롬프트를 수정</strong>할 수
-                  있는 인터페이스를 구축하였습니다.
+                <span className="block ml-4 mb-2">
+                  ∙ 제공된 엑셀 데이터를 기반으로 피그마에서 리포트 제작
                 </span>
               </span>
             </li>
             <li className="flex flex-col items-start mb-6">
-              <span className="font-bold w-20 mb-2">회고</span>
+              <span className="font-bold w-20 mb-2">헙업 과정</span>
               <span className="block ml-4">
-                사용자가 원하는 기능을 제공하기 위해 예외 상황과 다양한 변수를
-                고려하며 설계를 진행하다 보니, 기초 지식과 사용자 경험 측면에서
-                가장 크게 성장한 프로젝트였습니다. 이전 프로젝트에서는 기능
-                구현에만 집중하여 사용자 관점을 충분히 고려하지 못했지만, 이번
-                프로젝트에서는 사용자 입장에서 생각하며 진행했습니다. 예외
-                상황과 변수를 생각하며 처음으로 백앤드와 프론트앤드를 구축했고,
-                이러한 도전들을 통해 개발 전반에 대한 이해도가 높아졌고, 더
-                효율적인 문제 해결 능력을 갖추게 된 계기가 되었습니다. 특히 실제
-                서비스의 데이터베이스를 구축부터 서버 배포까지 전체적인
-                프로세스를 경험하며, 개발자로서의 즐거움을 느낄 수 있었던
-                프로젝트였습니다.
+                ∙<strong className="font-bold"> 주간 미팅:</strong> 프로젝트
+                전체 진행 상황 공유
+              </span>
+              <span className="block ml-4">
+                ∙<strong className="font-bold"> 스프린트 개발:</strong> 1주
+                단위로 업무를 관리하며 진행 상황 공유
               </span>
             </li>
           </ul>
