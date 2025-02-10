@@ -45,7 +45,7 @@ const ClabMVP: React.FC = () => {
         </Modal>
       )}
       <h2 className="text-4xl font-bold text-center mb-3">Talk-D 0.7 버전</h2>
-      <h2 className="text-xl font-bold mb-20 text-center">(2024.07~2025.01)</h2>
+      <h2 className="text-xl font-bold mb-20 text-center">(2024.07~2025.02)</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="md:col-span-2">
           <ul className="list-disc list-inside mb-4 leading-relaxed">
@@ -177,6 +177,14 @@ const ClabMVP: React.FC = () => {
             </li>
           </ul>
           <div>
+            <a
+              href="https://talk-d-fe.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 font-bold underline block"
+            >
+              서비스 페이지
+            </a>
             <a
               href="https://github.com/pyhilandjy/clab-api"
               target="_blank"

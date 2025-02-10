@@ -71,7 +71,7 @@ const ClabMVP: React.FC = () => {
               <span className="font-bold mb-1">주요 역할</span>
               <span className="block ml-4 mb-6">
                 ∙ Database Schema 확장 및 최적화 (Supabase)
-                <br />∙ 사용자 관리 시스템 전담 (FastAPI, Next.js)
+                <br />∙ 서비스 관리 시스템 전담 (FastAPI, Next.js)
                 <br />∙ 사용자 API 전담 (FastAPI)
                 <br />∙ 서비스 자동화 연동 (Naver Clova STT, LLM)
                 <br />∙ 배포 환경 유지 및 확장 (Docker, AWS, Github, Github
