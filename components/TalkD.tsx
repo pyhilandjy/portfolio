@@ -137,11 +137,11 @@ const ClabMVP: React.FC = () => {
               </span>
               <span className="block ml-4 mb-3">
                 <span className="block font-bold mb-1">
-                  4. 관리자 인터페이스 확장
+                  4. 관리자 워크스페이스 확장
                 </span>
                 <span className="block ml-4">
                   ∙ 데이터 후처리 및 레포트 작업을 통합 관리하는 관리자
-                  인터페이스
+                  워크스페이스 구축
                 </span>
                 <span className="block ml-4">
                   ∙ MVP 피드백 반영을 통한 UI/UX 개선
