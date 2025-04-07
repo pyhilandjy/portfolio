@@ -54,14 +54,9 @@ const ClabMVP: React.FC = () => {
             <li className="flex flex-col items-start">
               <span className="font-bold mb-2">프로젝트 개요</span>
               <span className="block ml-4">
-                ∙ 생애초기(0-4세) 뇌 신경망의 발달이 폭발적으로 일어나는 시기에
-                가장 중요하게 작용하는{" "}
-                <strong className="font-bold">{"부모의 말"}</strong>
-              </span>
-              <span className="block ml-8 mt-1">
-                아이의 건강한 성장발달을 돕기 위해{" "}
+                ∙ 아이의 건강한 성장발달을 돕기 위해{" "}
                 <strong className="font-bold">
-                  아이와 부모의 대화내용을 분석 하여 부모에게 대화의
+                  아이와 부모의 대화내용을 분석하여 부모에게 대화의{" "}
                 </strong>
                 <strong className="font-bold">방향성을 제시하는 서비스</strong>
               </span>
@@ -79,67 +74,73 @@ const ClabMVP: React.FC = () => {
               </span>
             </li>
             <li className="flex flex-col items-start">
-              <span className="font-bold mb-4">작업상세</span>
-              <span className="block ml-2 mb-3">
+              <span className="font-bold mb-4">작업 상세</span>
+
+              <span className="block ml-2 mb-4">
                 <span className="block font-bold mb-1">
                   1. 데이터베이스 설계 및 구현
                 </span>
                 <span className="block ml-4">
-                  ∙ 정규화 원칙을 적용한 테이블 설계로 데이터 일관성 확보 및
-                  중복 최소화 달성
+                  ∙ 정규화 원칙에 따라 테이블을 설계하여 데이터 일관성과
+                  재사용성 확보
                 </span>
                 <span className="block ml-4">
-                  ∙ 설계 초기 빈번한 스키마 변경으로 외래키 제약조건 제거 후
-                  인덱스 설정
+                  ∙ 초기 변경이 잦은 구조를 고려해 외래 키 대신 인덱스 기반 참조
+                  적용
                 </span>
-                <span className="block ml-8"></span>
               </span>
-              <span className="block ml-2 mb-3">
+
+              <span className="block ml-2 mb-4">
                 <span className="block font-bold mb-1">
-                  2. 데이터 전후처리 API/FE 구현
+                  2. API 및 프론트엔드 기능 개발
                 </span>
                 <span className="block ml-4">
-                  ∙ 사용자 대기 시간을 최소화하기 위한 API 설계 및 백그라운드
-                  스케줄러 로직 구현
+                  ∙ 사용자 대기 시간을 줄이기 위한 비동기 API 및 백그라운드
+                  스케줄러 구현
                 </span>
                 <span className="block ml-4">
-                  ∙ Naver Clova STT API 연동 및 텍스트 데이터 후처리
-                  워크스페이스 개발
+                  ∙ Clova STT 연동 및 후처리용 워크스페이스 개발
                 </span>
                 <span className="block ml-4">
-                  ∙ 대화 데이터의 순서 정합성을 보장하며 수정 작업을 처리하기
-                  위한 API 설계
+                  ∙ 대화 순서 정합성을 보장하는 수정 기능 및 트랜잭션 처리 로직
+                  구현
                 </span>
                 <span className="block ml-4">
-                  ∙ 오류 복구 및 데이터 무결성 유지를 위한 트랜잭션 및 예외 처리
-                  로직 구현
+                  ∙ 관리자 전용 통계 API 설계 및 엑셀 내보내기 기능 구현
                 </span>
-                <span className="block ml-8"></span>
+                <span className="block ml-4">
+                  ∙ 분석 결과를 기반으로 피그마에서 리포트 제작
+                </span>
               </span>
-              <span className="block ml-2 mb-5">
+
+              <span className="block ml-2 mb-4">
                 <span className="block font-bold mb-1">
-                  3. 데이터 분석 API/FE 구현
+                  3. 배포 인프라 구성 및 자동화
                 </span>
                 <span className="block ml-4">
-                  ∙ 관리자용 데이터 분석 API를 통해 대화 내용의 통계데이터 생성
+                  ∙ AWS EC2 인스턴스, S3 버킷 생성 및 리소스 구조 구성
                 </span>
                 <span className="block ml-4">
-                  ∙ 생성된 통계데이터 엑셀 파일로 내보내기
+                  ∙ Docker 기반 컨테이너 환경 구성 및 Nginx 리버스 프록시 설정
                 </span>
-                <span className="block ml-4 mb-2">
-                  ∙ 제공된 엑셀 데이터를 기반으로 피그마에서 리포트 제작
+                <span className="block ml-4">
+                  ∙ GitHub Actions 기반 CI/CD 파이프라인 구현
+                </span>
+                <span className="block ml-4">
+                  ∙ 프론트엔드 정적 사이트 Vercel 배포
                 </span>
               </span>
             </li>
+
             <li className="flex flex-col items-start mb-6">
-              <span className="font-bold w-20 mb-2">헙업 과정</span>
+              <span className="font-bold w-20 mb-2">협업 과정</span>
               <span className="block ml-4">
-                ∙<strong className="font-bold"> 주간 미팅:</strong> 프로젝트
-                전체 진행 상황 공유
+                ∙ <strong className="font-bold">주간 미팅:</strong> 프로젝트
+                전반 진행 상황 공유
               </span>
               <span className="block ml-4">
-                ∙<strong className="font-bold"> 스프린트 개발:</strong> 1주
-                단위로 업무를 관리하며 진행 상황 공유
+                ∙ <strong className="font-bold">스프린트 개발:</strong> 1주 단위
+                목표 기반 작업 관리
               </span>
             </li>
           </ul>

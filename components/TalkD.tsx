@@ -27,18 +27,22 @@ const ClabMVP: React.FC = () => {
           contentLabel="Image Modal"
           ariaHideApp={false}
         >
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50"
+            onClick={closeModal} // 클릭 시 모달 닫기
+          />
           {selectedImage && (
             <div
-              className="relative bg-black rounded-lg p-4"
-              onClick={closeModal}
+              className="relative bg-black rounded-lg p-4 z-10 overflow-auto max-h-screen cursor-pointer"
+              onClick={closeModal} // 클릭 시 모달 닫기
             >
               <Image
                 src={selectedImage}
                 alt="Modal Content"
-                layout="intrinsic"
+                layout="responsive"
                 width={1200}
                 height={950}
-                className="max-w-full max-h-screen rounded-lg"
+                className="max-w-full rounded-lg object-contain transition-transform duration-300 scale-100"
               />
             </div>
           )}
@@ -73,7 +77,7 @@ const ClabMVP: React.FC = () => {
               <span className="font-bold mb-1">주요 역할</span>
               <span className="block ml-4 mb-6">
                 ∙ Database Schema 확장 및 최적화 (Supabase)
-                <br />∙ 사용자 관리 시스템 전담 (FastAPI, Next.js)
+                <br />∙ 서비스 관리 시스템 전담 (FastAPI, Next.js)
                 <br />∙ 사용자 API 전담 (FastAPI)
                 <br />∙ 서비스 자동화 연동 (Naver Clova STT, LLM)
                 <br />∙ 배포 환경 유지 및 확장 (Docker, AWS, Github, Github
@@ -95,56 +99,71 @@ const ClabMVP: React.FC = () => {
               </span>
               <span className="block ml-4 mb-3">
                 <span className="block font-bold mb-1">
-                  2. 사용자 관리 API 확장
+                  2. 서비스 운영 관리 기능 확장
                 </span>
                 <span className="block ml-4">
-                  ∙<strong className="font-bold"> 콘텐츠 관리</strong>
-                  <span className="block ml-6">- 사용자 제공 컨텐츠 관리</span>
+                  ∙<strong className="font-bold"> 콘텐츠 데이터 관리</strong>
                   <span className="block ml-6">
-                    - 계층형 데이터의 정합성과 유실 방지를 고려한 설계
+                    - 사용자 제공 콘텐츠의 상태 관리 및 CRUD
+                  </span>
+                  <span className="block ml-6">
+                    - 상위-하위 데이터 간의 연관성을 고려한 데이터 무결성 보장
+                    설계
                   </span>
                 </span>
                 <span className="block ml-4">
-                  ∙<strong className="font-bold"> 사용자 관리</strong>
+                  ∙<strong className="font-bold"> 사용자 데이터 관리</strong>
                   <span className="block ml-6">
-                    - 레포트를 제공하기 위한 사용자 데이터 통합 관리
+                    - 레포트 제공을 위한 사용자 데이터 통합 관리 및 상태 기반
+                    처리
                   </span>
                   <span className="block ml-6">
-                    - 사용자 증가에 대비한 대규모 데이터 처리 중심의 설계
+                    - 동적 필터링과 페이지네이션을 통해 데이터 접근성 향상
                   </span>
                 </span>
                 <span className="block ml-4">
-                  ∙<strong className="font-bold"> 리포트 관리</strong>
+                  ∙<strong className="font-bold"> 리포트 데이터 관리</strong>
                   <span className="block ml-6">
-                    - 통계된 사용자 데이터 검수 및 관리
+                    - 가공된 사용자 데이터 기반 통계 생성, 시각화, 수정 기능
+                    제공
+                  </span>
+                  <span className="block ml-6">
+                    - 관리자 UI와 연동되는 데이터 흐름 설계 및 API 구현
                   </span>
                 </span>
                 <span className="block ml-8"></span>
               </span>
               <span className="block ml-4 mb-3">
                 <span className="block font-bold mb-1">
-                  2. 사용자 서비스 API 확장
+                  3. 사용자 서비스 API 확장
                 </span>
                 <span className="block ml-4">
-                  ∙<strong className="font-bold"> 사용자 콘텐츠 관리</strong>
+                  ∙
+                  <strong className="font-bold">
+                    {" "}
+                    콘텐츠 흐름 제어 로직 설계
+                  </strong>
                   <span className="block ml-6">
-                    - 사용자 컨텐츠 조회 및 신청 가능 컨텐츠 목록 제공
+                    - 콘텐츠 유형과 상태 조건에 따라 리포트 생성 및 다음 콘텐츠
+                    접근 제어
                   </span>
                   <span className="block ml-6">
-                    - 정책에 따른 데이터 검증 및 페이지 연동 로직 구현
+                    - 예외 처리 및 상태 관리 로직을 통한 흐름의 일관성 확보
                   </span>
                 </span>
               </span>
               <span className="block ml-4 mb-3">
                 <span className="block font-bold mb-1">
-                  4. 관리자 워크스페이스 확장
+                  4. 관리자 워크스페이스 개선
                 </span>
                 <span className="block ml-4">
-                  ∙ 데이터 후처리 및 레포트 작업을 통합 관리하는 관리자
-                  워크스페이스 구축
+                  ∙ MVP 피드백 기반 구조 개선 및 사용성 중심 UI/UX 리디자인
                 </span>
                 <span className="block ml-4">
-                  ∙ MVP 피드백 반영을 통한 UI/UX 개선
+                  ∙ 데이터 후처리/레포트 작업 통합 관리
+                </span>
+                <span className="block ml-4">
+                  ∙ 작업 흐름 단순화 및 핵심 기능 집중으로 생산성 향상
                 </span>
               </span>
               <span className="block ml-4 mb-5">
@@ -152,11 +171,10 @@ const ClabMVP: React.FC = () => {
                   5. 데이터 분석 자동화 연동
                 </span>
                 <span className="block ml-4">
-                  ∙ LLM 기반 음성 데이터 분석 시스템 구축 및 프롬프트 개선 도구
-                  개발
+                  ∙ LLM 기반 사용자 데이터 분석 파이프라인 구축
                 </span>
                 <span className="block ml-4">
-                  ∙ ML 서버와의 데이터 연동 및 분석 로직 구현
+                  ∙ 프롬프트 관리 도구 개발 및 분석 정확도 개선
                 </span>
               </span>
             </li>
@@ -164,15 +182,15 @@ const ClabMVP: React.FC = () => {
               <span className="font-bold w-20 mb-2">헙업 과정</span>
               <span className="block ml-4">
                 ∙<strong className="font-bold"> 주간 미팅:</strong> 프로젝트
-                전체 진행 상황 공유
+                전반 공유 및 기능 조율
               </span>
               <span className="block ml-4">
-                ∙<strong className="font-bold"> 데일리 스크럼:</strong> 오늘 할
-                일을 명료화하고, 협업을 위해 도움에 필요한 것 공유
+                ∙<strong className="font-bold"> 데일리 스크럼:</strong> 작업
+                목표 명확화 및 협업 요청 공유
               </span>
               <span className="block ml-4">
-                ∙<strong className="font-bold"> 스프린트 개발:</strong> 1주
-                단위로 업무를 관리하며 진행 상황 공유
+                ∙<strong className="font-bold"> 스프린트 개발:</strong> 단기
+                목표 기반 개발 사이클 운영
               </span>
             </li>
           </ul>
@@ -211,7 +229,7 @@ const ClabMVP: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className="space-y-10 flex flex-col justify-center items-center md:h-screen">
+        <div className="space-y-10 flex flex-col justify-center items-center">
           <Image
             src="/clab-plans-page.png"
             alt="아키텍쳐"
@@ -241,8 +259,16 @@ const ClabMVP: React.FC = () => {
             alt="워드클라우드"
             width={380}
             height={200}
-            className="rounded-lg shadow-md cursor-pointer"
+            className="rounded-lg shadow-md cursor-pointer object-cover h-48"
             onClick={() => handleImageClick("/clab-report1.png")}
+          />
+          <Image
+            src="/report.jpg"
+            alt="리포트"
+            width={380}
+            height={200}
+            className="rounded-lg shadow-md cursor-pointer object-cover h-48"
+            onClick={() => handleImageClick("/report.jpg")}
           />
         </div>
       </div>

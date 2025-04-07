@@ -60,43 +60,46 @@ const AboutMe: React.FC = () => {
           <div className="w-full md:w-2/3">
             <p className="text-2xl mb-10 mr-20 text-center">
               {'"'}
-              <strong className="font-bold">도전</strong>과{" "}
-              <strong className="font-bold">경험</strong>속에서 끊임없이 배우며
-              성장하는 개발자 최준용입니다.{'"'}
+              <strong className="font-bold underline underline-offset-8">
+                사용자에게 도움이 되는 서비스를 만드는 개발자, 최준용 입니다.
+              </strong>
+              {'"'}
             </p>
+
             <p className="text-lg mr-20 text-left">
               ∙ 서비스 아이디어 회의부터{" "}
               <strong className="font-bold">
-                BackEnd, FrontEnd, Database 설계 및 구축
+                BackEnd, FrontEnd, Database 설계 및 구축, 빌드/배포
               </strong>
+              까지
             </p>
-            <p className="text-lg mb-4 ml-4 mr-20 text-left">
-              <strong className="font-bold">빌드/배포</strong>한 경험이
-              있습니다.
-            </p>
-            <p className="text-lg mb-0 mr-20 text-left leading-loose">
-              ∙ 이해관계자와의{" "}
-              <strong className="font-bold">커뮤니케이션</strong>
-              에서는 복잡한 내용을 일상적인 예시로 풀어 설명하며,{" "}
-            </p>
-            <p className="text-lg mb-4 ml-4 mr-20 text-left leading-loose">
-              <strong className="font-bold">커뮤니케이션 능력</strong>을 꾸준히
-              개발하고 있습니다.
+            <p className="text-lg mb-3 ml-4 mr-20 text-left">
+              전 과정을 직접 담당하며 개발한 경험이 있습니다.
             </p>
             <p className="text-lg mb-0 mr-20 text-left leading-loose">
-              ∙ <strong className="font-bold">새로운 기술에</strong> 거부감이
-              없이 배우고 <strong className="font-bold">성장</strong>하는 과정을
-              즐며, 이를 통해 프로젝트에서
+              ∙ <strong className="font-bold">협업과정</strong>
+              에서는 목표를 명확히 공유하고,{" "}
+              <strong className="font-bold">소통</strong>을 통해 문제를 함께
+              해결해 나가는 과정을
             </p>
-            <p className="text-lg mb-4 ml-4 mr-20 text-left leading-loose">
-              <strong className="font-bold">더 나은 결과</strong>를 만드는
-              방법을 고민합니다.
+            <p className="text-lg mb-3 ml-4 mr-20 text-left leading-loose">
+              중요하게 생각합니다.
+            </p>
+            <p className="text-lg mb-3 mr-20 text-left leading-loose">
+              ∙ 상황을 빠르게 파악하고, 실제 사용자의 입장에서 필요한 조치를{" "}
+              <strong className="font-bold">주도적으로 제안</strong>
+              합니다.
+            </p>
+            <p className="text-lg mb-3 mr-20 text-left leading-loose">
+              ∙ 익숙한 기술을 더 깊이 있게 다지고, 새로운 기술은 거부감 없이
+              배우며 <strong className="font-bold">성장</strong>하는 것을
+              즐깁니다.
             </p>
             <p className="text-lg mb-0 mr-20 text-left">
-              ∙ <strong className="font-bold">책임감</strong>을 갖고 맡은 일을
-              <strong className="font-bold"> 최선을 다해 마무리</strong>하며
-              주변사람들에게 <strong className="font-bold">신뢰</strong>를
-              얻으려 노력합니다.
+              ∙ 맡은 일에 <strong className="font-bold">책임감</strong>을 갖고
+              끝까지 완수하며,
+              <strong className="font-bold">신뢰받는 개발자</strong>로 성장해
+              나가고자 합니다.
             </p>
           </div>
         </div>
