@@ -52,7 +52,7 @@ const ConnectsLab: React.FC = () => {
           <ul className="list-disc list-inside mb-4 leading-relaxed">
             <li className="flex items-start">
               <span className="font-bold w-20 mb-3">개요</span>
-              <p className="mb-3 ml-2 text-left flex gap-2">
+              <p className="mb-3 ml-4 text-left flex gap-2">
                 <span>:</span>
                 <span>
                   서비스를 개발 하기 이전에{" "}
