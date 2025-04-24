@@ -53,14 +53,18 @@ const ClabMVP: React.FC = () => {
           <ul className="list-disc list-inside mb-4 leading-relaxed">
             <li className="flex flex-col items-start">
               <span className="font-bold mb-2">프로젝트 개요</span>
-              <span className="block ml-4">
-                ∙ 아이의 건강한 성장발달을 돕기 위해{" "}
-                <strong className="font-bold">
-                  아이와 부모의 대화내용을 분석하여 부모에게 대화의{" "}
-                </strong>
-                <strong className="font-bold">방향성을 제시하는 서비스</strong>
-              </span>
-              <span className="block mb-3 ml-8 mt-1"></span>
+              <p className="mb-3 ml-4 text-left flex gap-2">
+                <span>∙</span>
+                <span>
+                  아이의 건강한 성장발달을 돕기 위해{" "}
+                  <strong className="font-bold">
+                    아이와 부모의 대화내용을 분석하여 부모에게 대화의{" "}
+                  </strong>
+                  <strong className="font-bold">
+                    방향성을 제시하는 서비스
+                  </strong>
+                </span>
+              </p>
             </li>
             <li className="flex flex-col items-start">
               <span className="font-bold mb-1">주요 역할</span>

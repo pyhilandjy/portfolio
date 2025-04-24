@@ -66,29 +66,30 @@ const AboutMe: React.FC = () => {
               {'"'}
             </p>
 
-            <p className="text-lg mr-20 text-left">
-              ∙ 서비스 아이디어 회의부터{" "}
-              <strong className="font-bold">
-                BackEnd, FrontEnd, Database 설계 및 구축, 빌드/배포
-              </strong>
-              까지
+            <p className="text-lg mb-3 mr-20 text-left leading-loose flex gap-2">
+              <span>∙</span>
+              <span>
+                서비스 아이디어 회의부터{" "}
+                <strong className="font-bold">
+                  BackEnd, FrontEnd, Database 설계 및 구축, 빌드/배포
+                </strong>
+                까지 전 과정을 직접 담당하며 개발한 경험이 있습니다.
+              </span>
             </p>
-            <p className="text-lg mb-3 ml-4 mr-20 text-left">
-              전 과정을 직접 담당하며 개발한 경험이 있습니다.
+            <p className="text-lg mb-3 mr-20 text-left leading-loose flex gap-2">
+              <span>∙</span>
+              <span>
+                협업과정에서는 목표를 명확히 공유하고,{" "}
+                <strong className="font-bold">소통</strong>을 통해 문제를 함께
+                해결해 나가는 과정을 중요하게 생각합니다.
+              </span>
             </p>
-            <p className="text-lg mb-0 mr-20 text-left leading-loose">
-              ∙ <strong className="font-bold">협업과정</strong>
-              에서는 목표를 명확히 공유하고,{" "}
-              <strong className="font-bold">소통</strong>을 통해 문제를 함께
-              해결해 나가는 과정을
-            </p>
-            <p className="text-lg mb-3 ml-4 mr-20 text-left leading-loose">
-              중요하게 생각합니다.
-            </p>
-            <p className="text-lg mb-3 mr-20 text-left leading-loose">
-              ∙ 상황을 빠르게 파악하고, 실제 사용자의 입장에서 필요한 조치를{" "}
-              <strong className="font-bold">주도적으로 제안</strong>
-              합니다.
+            <p className="text-lg mb-3 mr-20 text-left leading-loose flex gap-2">
+              <span>∙</span>
+              <span>
+                상황을 빠르게 파악하고, 실제 사용자의 입장에서 필요한 조치를{" "}
+                <strong className="font-bold">주도적으로 제안</strong>합니다.
+              </span>
             </p>
             <p className="text-lg mb-3 mr-20 text-left leading-loose">
               ∙ 익숙한 기술을 더 깊이 있게 다지고, 새로운 기술은 거부감 없이
