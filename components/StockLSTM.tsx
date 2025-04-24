@@ -13,7 +13,7 @@ const StockLSTM: React.FC = () => {
             <li className="flex items-start">
               <span className="font-bold w-20 mb-6">개요</span>
               <p className="mb-3 ml-0 text-left flex gap-2">
-                <span>∙</span>
+                <span>:</span>
                 <span>
                   코스피, 코스닥의 주식 가격을 시계열을 이용하여 예측하는
                   프로젝트
@@ -23,21 +23,21 @@ const StockLSTM: React.FC = () => {
             <li className="flex items-start">
               <span className="font-bold w-20 mb-6">참여 인원</span>
               <p className="mb-3 ml-0 text-left flex gap-2">
-                <span>∙</span>
+                <span>:</span>
                 <span>4명</span>
               </p>
             </li>
             <li className="flex items-start">
               <span className="font-bold w-20 mb-6">목표</span>
               <p className="mb-3 ml-0 text-left flex gap-2">
-                <span>∙</span>
+                <span>:</span>
                 <span>데이터 파이프라인 구축</span>
               </p>
             </li>
             <li className="flex items-start">
               <span className="font-bold w-20 mb-6">주요 기술</span>
               <p className="mb-3 ml-0 text-left flex gap-2">
-                <span>∙</span>
+                <span>:</span>
                 <span>Airflow, Crawl, LSTM, AWS</span>
               </p>
             </li>
