@@ -58,10 +58,10 @@ const AboutMe: React.FC = () => {
             </p>
           </div>
           <div className="w-full md:w-2/3">
-            <p className="text-2xl mb-10 mr-20 text-center">
+            <p className="text-xl mb-10 mr-20 text-center">
               {'"'}
               <strong className="font-bold underline underline-offset-8">
-                사용자에게 도움이 되는 서비스를 만드는 개발자, 최준용 입니다.
+                사용자에게 도움이 되는 서비스를 만드는 개발자, 최준용입니다.
               </strong>
               {'"'}
             </p>
@@ -91,12 +91,12 @@ const AboutMe: React.FC = () => {
                 <strong className="font-bold">주도적으로 제안</strong>합니다.
               </span>
             </p>
-            <p className="text-lg mb-3 mr-20 text-left leading-loose">
+            <p className="text-lg mb-3 mr-20 text-left leading-loose flex gap-2">
               ∙ 익숙한 기술을 더 깊이 있게 다지고, 새로운 기술은 거부감 없이
               배우며 <strong className="font-bold">성장</strong>하는 것을
               즐깁니다.
             </p>
-            <p className="text-lg mb-0 mr-20 text-left">
+            <p className="text-lg mb-3 mr-20 text-left leading-loose flex gap-2">
               ∙ 맡은 일에 <strong className="font-bold">책임감</strong>을 갖고
               끝까지 완수하며,
               <strong className="font-bold">신뢰받는 개발자</strong>로 성장해
