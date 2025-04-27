@@ -44,11 +44,11 @@ const StockLSTM: React.FC = () => {
             <li className="flex items-start">
               <span className="font-bold w-20 mb-6">주요 작업</span>
               <div className="ml-2">
-                <p className="mb-3 text-left flex gap-2">
+                <p className="mb-1 text-left flex gap-2">
                   <span>∙</span>
                   <span>주식 데이터 수집 및 적재</span>
                 </p>
-                <p className="mb-3 text-left flex gap-2">
+                <p className="mb-1 text-left flex gap-2">
                   <span>∙</span>
                   <span>LSTM 모델 학습 및 예측</span>
                 </p>
@@ -60,7 +60,7 @@ const StockLSTM: React.FC = () => {
             </li>
             <li className="flex flex-col items-start">
               <span className="font-bold w-20 mb-4">작업상세</span>
-              <p className="mb-3 ml-2 text-left flex gap-2">
+              <p className="mb-1 ml-2 text-left flex gap-2">
                 <span>1.</span>
                 <span>
                   <strong className="font-bold">데이터 수집</strong>
@@ -73,14 +73,14 @@ const StockLSTM: React.FC = () => {
                   Airflow를 통해 데이터 수집 및 적재하였습니다.
                 </span>
               </p>
-              <p className="mb-1 ml-4 text-left flex gap-2">
+              <p className="mb-3 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
                   경험이 부족했기에 많은 양의 데이터를 수집할 때 병렬처리로
                   진행하지 않고 순차적으로 데이터를 수집하였습니다.
                 </span>
               </p>
-              <p className="mb-3 ml-2 text-left flex gap-2">
+              <p className="mb-1 ml-2 text-left flex gap-2">
                 <span>2.</span>
                 <span>
                   <strong className="font-bold">주가 예측</strong>
@@ -93,7 +93,7 @@ const StockLSTM: React.FC = () => {
                   판단하여 LSTM을 사용하여 주가를 예측하였습니다.
                 </span>
               </p>
-              <p className="mb-1 ml-4 text-left flex gap-2">
+              <p className="mb-3 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
                   예측 결과가 다소 아쉬웠지만, 이를 통해 시계열 데이터의 특성,
@@ -101,7 +101,7 @@ const StockLSTM: React.FC = () => {
                   이해도를 높일 수 있는 계기가 되었습니다.
                 </span>
               </p>
-              <p className="mb-3 ml-2 text-left flex gap-2">
+              <p className="mb-1 ml-2 text-left flex gap-2">
                 <span>3.</span>
                 <span>
                   <strong className="font-bold">

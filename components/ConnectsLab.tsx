@@ -51,8 +51,8 @@ const ConnectsLab: React.FC = () => {
         <div className="md:col-span-2">
           <ul className="list-disc list-inside mb-4 leading-relaxed">
             <li className="flex items-start">
-              <span className="font-bold w-20 mb-3">개요</span>
-              <p className="mb-3 ml-4 text-left flex gap-2">
+              <span className="font-bold w-20 mb-6">개요</span>
+              <p className="mb-3 ml-2 text-left flex gap-2">
                 <span>:</span>
                 <span>
                   서비스를 개발 하기 이전에{" "}
@@ -60,20 +60,26 @@ const ConnectsLab: React.FC = () => {
                     고객들의 고민이나 관심사를 파악
                   </strong>
                   하기 위해 인스타그램의{" "}
-                  <strong className="font-bold">육아 데이터를 수집하여</strong>
-                  <strong className="font-bold"> 분석하고 시각화</strong>
+                  <strong className="font-bold">
+                    육아 데이터를 수집하여 분석하고 시각화
+                  </strong>
                 </span>
               </p>
             </li>
+
             <li className="flex items-start">
-              <span className="font-bold w-20 mb-3">참여 인원</span>
-              <span className="block mb-6">: 4명</span>
+              <span className="font-bold w-20 mb-6">참여 인원</span>
+              <p className="mb-3 ml-0 text-left flex gap-2">
+                <span>:</span>
+                <span>4명</span>
+              </p>
             </li>
             <li className="flex items-start">
-              <span className="font-bold w-20 mb-3">목표</span>
-              <span className="block ml-0 mb-6">
-                : 양적분석을 위한 데이터 수집 및 시각화
-              </span>
+              <span className="font-bold w-20 mb-6">목표</span>
+              <p className="mb-3 ml-0 text-left flex gap-2">
+                <span>:</span>
+                <span>양적분석을 위한 데이터 수집 및 시각화</span>
+              </p>
             </li>
             <li className="flex items-start">
               <span className="font-bold w-20 mb-6">주요 기술</span>
@@ -92,7 +98,7 @@ const ConnectsLab: React.FC = () => {
             </li>
             <li className="flex flex-col items-start">
               <span className="font-bold w-20 mb-4">작업상세</span>
-              <p className="mb-3 ml-2 text-left leading-loose flex gap-2">
+              <p className="mb-1 ml-2 text-left leading-loose flex gap-2">
                 <span>1.</span>
                 <span>
                   <strong className="font-bold">데이터 수집</strong>
@@ -105,14 +111,14 @@ const ConnectsLab: React.FC = () => {
                   수 없어서 크롤링을 진행하였습니다.
                 </span>
               </p>
-              <p className="mb-1 ml-4 text-left flex gap-2">
+              <p className="mb-3 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
                   크롤링이라는 특성상 에러핸들링이 많이 필요했습니다. 이를
                   해결하기 위해 Discord에 에러로그를 전송하도록 설정하였습니다.
                 </span>
               </p>
-              <p className="mb-3 ml-2 text-left leading-loose flex gap-2">
+              <p className="mb-1 ml-2 text-left leading-loose flex gap-2">
                 <span>2.</span>
                 <span>
                   <strong className="font-bold">
@@ -128,7 +134,7 @@ const ConnectsLab: React.FC = () => {
                   크롤링하였습니다.
                 </span>
               </p>
-              <p className="mb-1 ml-4 text-left flex gap-2">
+              <p className="mb-3 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
                   크롤링을 통해 데이터를 수집하기 때문에 시간이 오래 걸렸습니다.
@@ -136,13 +142,13 @@ const ConnectsLab: React.FC = () => {
                   Firefox의 Container 실행이 원활하지 못하여 실패하였습니다.
                 </span>
               </p>
-              <p className="mb-3 ml-2 text-left leading-loose flex gap-2">
+              <p className="mb-1 ml-2 text-left leading-loose flex gap-2">
                 <span>3.</span>
                 <span>
                   <strong className="font-bold">코드 관리</strong>
                 </span>
               </p>
-              <p className="mb-3 ml-4 text-left flex gap-2">
+              <p className="mb-1 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
                   이전 프로젝트에서 복잡한 로직이 단일 함수에 집중되어 있어 코드
@@ -151,7 +157,7 @@ const ConnectsLab: React.FC = () => {
                   노력했습니다.
                 </span>
               </p>
-              <p className="mb-3 ml-4 text-left flex gap-2">
+              <p className="mb-1 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
                   각 함수는 단일 책임 원칙을 준수하도록 노력했으며, 이를 통해
