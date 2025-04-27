@@ -61,7 +61,7 @@ const AboutMe: React.FC = () => {
             <p className="text-2xl mb-10 mr-20 text-center">
               {'"'}
               <strong className="font-bold underline underline-offset-8">
-                사용자에게 도움이 되는 서비스를 만드는 개발자, 최준용입니다.
+                사용자에게 도움이 되는 서비스를 만드는 개발자입니다.
               </strong>
               {'"'}
             </p>
