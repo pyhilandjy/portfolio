@@ -43,7 +43,7 @@ const StockLSTM: React.FC = () => {
             </li>
             <li className="flex items-start">
               <span className="font-bold w-20 mb-6">주요 작업</span>
-              <div className="ml-2">
+              <div className="ml-0">
                 <p className="mb-1 text-left flex gap-2">
                   <span>-</span>
                   <span>주식 데이터 수집 및 적재</span>
