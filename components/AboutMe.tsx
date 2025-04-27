@@ -94,18 +94,19 @@ const AboutMe: React.FC = () => {
             <p className="text-lg mb-3 mr-20 text-left leading-loose flex gap-2">
               <span>∙</span>
               <span>
-              익숙한 기술을 더 깊이 있게 다지고, 새로운 기술은 거부감 없이
-              배우며 <strong className="font-bold">성장</strong>하는 것을
-              즐깁니다.</span>
+                익숙한 기술을 더 깊이 있게 다지고, 새로운 기술은 거부감 없이
+                배우며 <strong className="font-bold">성장</strong>하는 것을
+                즐깁니다.
+              </span>
             </p>
             <p className="text-lg mb-3 mr-20 text-left leading-loose flex gap-2">
-                            <span>∙</span>
+              <span>∙</span>
               <span>
-              맡은 일에 <strong className="font-bold">책임감</strong>을 갖고
-              끝까지 완수하며,
-              <strong className="font-bold">신뢰받는 개발자</strong>로 성장해
-              나가고자 합니다.
-                </span>
+                맡은 일에 <strong className="font-bold">책임감</strong>을 갖고
+                끝까지 완수하며,{" "}
+                <strong className="font-bold">신뢰받는 개발자</strong>로 성장해
+                나가고자 합니다.
+              </span>
             </p>
           </div>
         </div>
