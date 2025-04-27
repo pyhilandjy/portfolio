@@ -88,13 +88,21 @@ const ConnectsLab: React.FC = () => {
               </span>
             </li>
             <li className="flex items-start">
-              <span className="font-bold w-20 mb-3">주요 작업</span>
-              <span className="block ml-2 mb-3">
-                - 인스타그램 데이터 수집
-                <br />
-                - 수집된 데이터 전처리
-                <br />- 데이터 시각화
-              </span>
+              <span className="font-bold w-20 mb-6">주요 작업</span>
+              <div className="ml-2">
+                <p className="mb-1 text-left flex gap-2">
+                  <span>-</span>
+                  <span>인스타그램 데이터 수집</span>
+                </p>
+                <p className="mb-1 text-left flex gap-2">
+                  <span>-</span>
+                  <span>수집된 데이터 전처리</span>
+                </p>
+                <p className="mb-3 text-left flex gap-2">
+                  <span>-</span>
+                  <span>데이터 시각화</span>
+                </p>
+              </div>
             </li>
             <li className="flex flex-col items-start">
               <span className="font-bold w-20 mb-4">작업상세</span>

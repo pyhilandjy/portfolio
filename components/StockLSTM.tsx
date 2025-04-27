@@ -45,15 +45,15 @@ const StockLSTM: React.FC = () => {
               <span className="font-bold w-20 mb-6">주요 작업</span>
               <div className="ml-2">
                 <p className="mb-1 text-left flex gap-2">
-                  <span>∙</span>
+                  <span>-</span>
                   <span>주식 데이터 수집 및 적재</span>
                 </p>
                 <p className="mb-1 text-left flex gap-2">
-                  <span>∙</span>
+                  <span>-</span>
                   <span>LSTM 모델 학습 및 예측</span>
                 </p>
                 <p className="mb-3 text-left flex gap-2">
-                  <span>∙</span>
+                  <span>-</span>
                   <span>Airflow를 이용한 데이터 파이프라인 구축</span>
                 </p>
               </div>
