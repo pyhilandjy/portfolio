@@ -47,6 +47,7 @@ const Youtube: React.FC = () => {
       <h2 className="text-4xl font-bold mb-20 text-center">
         YouTube 기반 개인 학습 메모장
       </h2>
+      <h2 className="text-xl font-bold mb-20 text-center">(2025.06~2025.06)</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="md:col-span-2">
           <ul className="list-disc list-inside mb-4 leading-relaxed">
@@ -166,11 +167,18 @@ const Youtube: React.FC = () => {
                 <span>∙</span>
                 <span>FastAPI와 Redis를 활용해 session_id 기반 인증 구현</span>
               </p>
-              <p className="mb-3 ml-4 text-left flex gap-2">
+              <p className="mb-1 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
                   session_id를 Redis에 TTL과 함께 저장하고, HTTPOnly 쿠키로
                   클라이언트에 전달
+                </span>
+              </p>
+              <p className="mb-3 ml-9 text-left flex gap-2">
+                <span>문제점 :</span>
+                <span>
+                  FE, BE 도메인이 서로 달라서, 브라우저가 쿠키를 서드파티
+                  요청으로 인식하고 차단함
                 </span>
               </p>
               <p className="mb-1 ml-2 text-left leading-loose flex gap-2">
@@ -210,15 +218,22 @@ const Youtube: React.FC = () => {
               <p className="mb-1 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
+                  블로킹 I/O 작업(subprocess)은 run_in_executor를 통해
+                  쓰레드풀에서 병렬 처리
+                </span>
+              </p>
+              <p className="mb-1 ml-4 text-left flex gap-2">
+                <span>∙</span>
+                <span>
                   각 영상에 대한 노트 기능을 tiptap 에디터를 통해 제공하며,
-                  작성된 노트는 편집/조회 가능
+                  에디터 내용 변경 시 자동 저장
                 </span>
               </p>
               <p className="mb-3 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
-                  블로킹 I/O 작업(subprocess)은 run_in_executor를 통해
-                  쓰레드풀에서 병렬 처리
+                  사용자의 재생 시간은 로컬스토리지에 기록되며, 컴포넌트가
+                  리렌더링될 때 자동으로 적용
                 </span>
               </p>
             </li>
@@ -229,46 +244,85 @@ const Youtube: React.FC = () => {
                 상태를 처리하는 구조였기에, 쿠키와 세션 관리에 대한 이해가
                 부족하다고 느꼈습니다. 이를 보완하고자 Redis와 쿠키를 활용한
                 세션 인증 구조를 직접 구현해보는 것을 목표로 삼고 프로젝트를
-                시작하게 되었습니다. 로그인과 회원가입처럼 보편적인 기능만
-                구현하기보다는 실제 사용 가능한 서비스를 만들고 싶었고, 어떤
-                형태로 확장할지 고민하던 중, 평소 YouTube로 공부를 많이 하던
-                제게 필요한 기능으로 유튜브 영상을 다운받아 메모가 가능한
-                페이지를 만드는 프로젝트를 시작하였습니다. 이 과정에서 로컬 서버
-                운영을 직접 경험하기 위해 노트북에 Ubuntu를 설치하고,
-                포트포워딩을 통해 외부 접속이 가능한 개발 환경을 구성하였으며,
-                이를 통해 로컬 서버 운영에 대한 감각도 키울 수 있었고, 인증,
-                세션 관리, 서버 구성 등 서비스의 기본적인 구조를 이해하는
-                프로젝트가 되었습니다.
+                시작하게 되었습니다. 이 과정에서 서로다른 도메인을 사용했기에,
+                브라우저의 CORS 정책으로 인해 서드파티 쿠키가 차단되는 문제를
+                겪었습니다. 이를 해결하기 위해, CSRF 방지를 위해 특정 도메인에
+                대해서만 서드파티 쿠키를 허용하는 설정을 적용했습니다. 또한,
+                개인 서버를 구축하여 외부에서 접근할 수 있는 환경을
+                만들었습니다. 이 프로젝트를 통해 세션 관리와 인증 시스템에 대한
+                이해도를 높일 수 있었고, 개인 서버 환경에서의 개발 경험을 쌓을
+                수 있었습니다.
               </span>
             </li>
           </ul>
           <div>
             <a
-              href="https://github.com/pyhilandjy/youtube-note"
+              href="https://github.com/pyhilandjy/archive-be"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 font-bold underline block"
             >
-              Github Repo
+              Github BackEnd Repo
             </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/pyhilandjy/archive"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 font-bold underline block"
+            >
+              Github FrontEnd Repo
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://youtube-study-archive.vercel.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 font-bold underline block"
+            >
+              Project Page
+            </a>
+          </div>
+          <div>
+            본 프로젝트는 프론트엔드와 백엔드 도메인이 서로 달라, 서드파티 쿠키
+            허용이 필요합니다. CSRF(사이트 간 요청 위조) 방지를 위해, 해당
+            도메인만 서드파티 쿠키 허용 대상으로 설정하시길 권장드립니다.
           </div>
         </div>
         <div className="space-y-10 flex flex-col justify-center items-center h-full md:h-screen">
           <Image
-            src="/youtube-note-arch.png"
+            src="/youtube-login.png"
             alt="아키텍처"
             width={380}
             height={200}
             className="rounded-lg shadow-md cursor-pointer"
-            onClick={() => handleImageClick("/youtube-note-arch.png")}
+            onClick={() => handleImageClick("/youtube-login.png")}
           />
           <Image
-            src="/youtube-note-ui.png"
+            src="/youtube-list.png"
+            alt="아키텍처"
+            width={380}
+            height={200}
+            className="rounded-lg shadow-md cursor-pointer"
+            onClick={() => handleImageClick("/youtube-list.png")}
+          />
+          <Image
+            src="/youtube-down-editor.png"
             alt="UI 예시"
             width={380}
             height={200}
             className="rounded-lg shadow-md cursor-pointer"
-            onClick={() => handleImageClick("/youtube-note-ui.png")}
+            onClick={() => handleImageClick("/youtube-down-editor.png")}
+          />
+          <Image
+            src="/youtube-side-editor.png"
+            alt="UI 예시"
+            width={380}
+            height={200}
+            className="rounded-lg shadow-md cursor-pointer"
+            onClick={() => handleImageClick("/youtube-side-editor.png")}
           />
         </div>
       </div>
