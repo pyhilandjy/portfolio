@@ -47,6 +47,7 @@ const ConnectsLab: React.FC = () => {
       <h2 className="text-4xl font-bold mb-20 text-center">
         인스타그램 데이터 수집 및 시각화(Connects Lab 기업연계 프로젝트)
       </h2>
+      <h2 className="text-xl font-bold mb-20 text-center">(2024.10~2025.12)</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="md:col-span-2">
           <ul className="list-disc list-inside mb-4 leading-relaxed">
