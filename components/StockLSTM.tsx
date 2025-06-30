@@ -7,6 +7,7 @@ const StockLSTM: React.FC = () => {
       <h2 className="text-4xl font-bold mb-20 text-center">
         Stock price prediction
       </h2>
+      <h2 className="text-xl font-bold mb-20 text-center">(2023.07~2023.08)</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="md:col-span-2">
           <ul className="list-disc list-inside mb-4 leading-relaxed">
