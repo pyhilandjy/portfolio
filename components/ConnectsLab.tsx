@@ -44,7 +44,7 @@ const ConnectsLab: React.FC = () => {
           )}
         </Modal>
       )}
-      <h2 className="text-4xl font-bold mb-20 text-center">
+      <h2 className="text-4xl font-bold text-center mb-3">
         인스타그램 데이터 수집 및 시각화(Connects Lab 기업연계 프로젝트)
       </h2>
       <h2 className="text-xl font-bold mb-20 text-center">(2024.10~2025.12)</h2>

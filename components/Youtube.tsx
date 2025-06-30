@@ -44,7 +44,7 @@ const Youtube: React.FC = () => {
           )}
         </Modal>
       )}
-      <h2 className="text-4xl font-bold mb-20 text-center">
+      <h2 className="text-4xl font-bold text-center mb-3">
         YouTube 기반 개인 학습 메모장
       </h2>
       <h2 className="text-xl font-bold mb-20 text-center">(2025.06~2025.06)</h2>
@@ -291,7 +291,7 @@ const Youtube: React.FC = () => {
             도메인만 서드파티 쿠키 허용 대상으로 설정하시길 권장드립니다.
           </div>
         </div>
-        <div className="space-y-10 flex flex-col justify-center items-center h-full md:h-screen">
+        <div className="space-y-10 flex flex-col justify-center items-center">
           <Image
             src="/youtube-login.png"
             alt="아키텍처"
