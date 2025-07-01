@@ -79,37 +79,46 @@ const Youtube: React.FC = () => {
               </p>
             </li>
             <li className="flex items-start">
-              <span className="font-bold w-20 mb-6">주요 기술</span>
-              <span className="block ml-0 mb-3">
-                : FastAPI, Next.js, PostgreSQL, Redis, yt-dlp, SMTP, Ubuntu 서버
-              </span>
-            </li>
-            <li className="flex items-start">
               <span className="font-bold w-20 mb-6">주요 작업</span>
               <div className="ml-0">
                 <p className="mb-1 text-left flex gap-2">
                   <span>-</span>
-                  <span>Ubuntu 환경 구축 및 포트 포워딩 설정</span>
-                </p>
-                <p className="mb-1 text-left flex gap-2">
-                  <span>-</span>
-                  <span>SMTP를 이용한 회원가입 및 이메일 인증 기능 구현</span>
-                </p>
-                <p className="mb-1 text-left flex gap-2">
-                  <span>-</span>
                   <span>
-                    Redis 및 쿠키를 활용한 세션 기반 로그인 인증 시스템 구현
+                    Ubuntu 서버 환경 구축 및 포트 포워딩 설정을 통한 서비스 운영
+                    기반 마련
                   </span>
                 </p>
                 <p className="mb-1 text-left flex gap-2">
                   <span>-</span>
                   <span>
-                    메인/서브 구조의 계층형 카테고리 시스템 설계 및 적용
+                    SMTP 연동을 통한 회원가입 및 이메일 인증 플로우 구현
+                  </span>
+                </p>
+                <p className="mb-1 text-left flex gap-2">
+                  <span>-</span>
+                  <span>
+                    Redis와 쿠키 기반의 세션 로그인 인증 시스템 설계 및 적용
+                  </span>
+                </p>
+                <p className="mb-1 text-left flex gap-2">
+                  <span>-</span>
+                  <span>
+                    메인/서브 구조를 가진 계층형 카테고리 시스템 설계 및 콘텐츠
+                    구조화
+                  </span>
+                </p>
+                <p className="mb-1 text-left flex gap-2">
+                  <span>-</span>
+                  <span>
+                    WebSocket을 활용한 콘텐츠 처리 상태의 실시간 UI 반영 기능
+                    구현
                   </span>
                 </p>
                 <p className="mb-3 text-left flex gap-2">
                   <span>-</span>
-                  <span>YouTube 영상 저장 및 노트 작성 기능 구현</span>
+                  <span>
+                    YouTube 영상 다운로드 및 Tiptap 기반 노트 작성 기능 구현
+                  </span>
                 </p>
               </div>
             </li>
@@ -218,22 +227,29 @@ const Youtube: React.FC = () => {
               <p className="mb-1 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
-                  블로킹 I/O 작업(subprocess)은 run_in_executor를 통해
-                  쓰레드풀에서 병렬 처리
+                  다운로드 작업은 비동기 큐를 통해 처리되며, 서버 시작 시 워커가
+                  자동으로 활성화
                 </span>
               </p>
               <p className="mb-1 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
-                  각 영상에 대한 노트 기능을 tiptap 에디터를 통해 제공하며,
-                  에디터 내용 변경 시 자동 저장
+                  다운로드 진행 상태는 WebSocket을 통해 실시간으로 클라이언트에
+                  전송되어 UI에 반영
+                </span>
+              </p>
+              <p className="mb-1 ml-4 text-left flex gap-2">
+                <span>∙</span>
+                <span>
+                  각 영상에는 Tiptap 기반의 노트 에디터를 제공하고, 작성 내용은
+                  자동으로 저장
                 </span>
               </p>
               <p className="mb-3 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
-                  사용자의 재생 시간은 로컬스토리지에 기록되며, 컴포넌트가
-                  리렌더링될 때 자동으로 적용
+                  사용자의 재생 위치는 로컬 스토리지에 저장되어, 이어보기 기능을
+                  지원
                 </span>
               </p>
             </li>
@@ -285,7 +301,7 @@ const Youtube: React.FC = () => {
               Project Page
             </a>
           </div>
-          <div>
+          <div className="mt-4 text-red-500">
             본 프로젝트는 프론트엔드와 백엔드 도메인이 서로 달라, 서드파티 쿠키
             허용이 필요합니다. CSRF(사이트 간 요청 위조) 방지를 위해, 해당
             도메인만 서드파티 쿠키 허용 대상으로 설정하시길 권장드립니다.
