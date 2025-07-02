@@ -301,10 +301,16 @@ const Youtube: React.FC = () => {
               Project Page
             </a>
           </div>
-          <div className="mt-4 text-red-500">
-            본 프로젝트는 프론트엔드와 백엔드 도메인이 서로 달라, 서드파티 쿠키
-            허용이 필요합니다. CSRF(사이트 간 요청 위조) 방지를 위해, 해당
-            도메인만 서드파티 쿠키 허용 대상으로 설정하시길 권장드립니다.
+          <div className="mt-4 text-sm text-red-500 leading-relaxed">
+            이 프로젝트는 프론트엔드와 백엔드가 서로 다른 도메인에서 운영됩니다.
+            <br />
+            세션 인증에 쿠키를 사용하고 있어, 브라우저 설정에 따라 로그인이
+            차단될 수 있습니다.
+            <br />
+            <strong>정상적인 이용을 위해 서드파티 쿠키 허용</strong>을
+            활성화해주세요.
+            <br />
+            (예: Chrome &gt; 설정 &gt; 개인정보 및 보안 &gt; 서드파티 쿠키 허용)
           </div>
         </div>
         <div className="space-y-10 flex flex-col justify-center items-center">
