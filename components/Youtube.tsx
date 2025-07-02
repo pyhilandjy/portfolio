@@ -273,6 +273,16 @@ const Youtube: React.FC = () => {
           </ul>
           <div>
             <a
+              href="https://definitions-graphic-surrounding-leisure.trycloudflare.com/videos/user_40a074cc-86ea-4c12-af49-f3d0e22f044c/category_99e4da7f-f09a-4613-bc87-0dcc15edddb4/8967ac83-a573-4ffe-8c6f-d98786877dcf.mp4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 font-bold underline block"
+            >
+              시연영상
+            </a>
+          </div>
+          <div>
+            <a
               href="https://github.com/pyhilandjy/archive-be"
               target="_blank"
               rel="noopener noreferrer"
