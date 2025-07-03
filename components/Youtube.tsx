@@ -187,7 +187,7 @@ const Youtube: React.FC = () => {
                 <span>문제점 :</span>
                 <span>
                   FE, BE 도메인이 서로 달라서, 브라우저가 쿠키를 서드파티
-                  요청으로 인식하고 차단함
+                  요청으로 인식
                 </span>
               </p>
               <p className="mb-1 ml-2 text-left leading-loose flex gap-2">
@@ -220,15 +220,8 @@ const Youtube: React.FC = () => {
               <p className="mb-1 ml-4 text-left flex gap-2">
                 <span>∙</span>
                 <span>
-                  yt-dlp를 활용하여 사용자가 입력한 YouTube URL의 영상과
-                  썸네일을 다운로드하고 로컬 서버에 저장
-                </span>
-              </p>
-              <p className="mb-1 ml-4 text-left flex gap-2">
-                <span>∙</span>
-                <span>
-                  다운로드 작업은 비동기 큐를 통해 처리되며, 서버 시작 시 워커가
-                  자동으로 활성화
+                  다운로드 요청은 서버 시작 시 자동 등록되는 3개의 비동기 워커가
+                  FIFO 방식으로 병렬 처리되도록 설계
                 </span>
               </p>
               <p className="mb-1 ml-4 text-left flex gap-2">
@@ -355,6 +348,14 @@ const Youtube: React.FC = () => {
             height={200}
             className="rounded-lg shadow-md cursor-pointer"
             onClick={() => handleImageClick("/youtube-side-editor.png")}
+          />
+          <Image
+            src="/youtube-fifo.png"
+            alt="UI 예시"
+            width={380}
+            height={200}
+            className="rounded-lg shadow-md cursor-pointer"
+            onClick={() => handleImageClick("/youtube-fifo.png")}
           />
         </div>
       </div>
