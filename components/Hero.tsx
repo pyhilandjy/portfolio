@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative h-screen flex items-center justify-center text-white">
+    <div className="relative min-h-screen flex items-center justify-center text-white pt-16">
       {/* GIF 배경 이미지 */}
       <Image
         src="/hero-backround.gif"
